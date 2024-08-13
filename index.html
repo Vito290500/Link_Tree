@@ -5,12 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vito - LinkTree</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <nav class="nav-bar">
-        <button class="follow-btn"><img src="includes/img/notifica.png" ></button>
-        <button class="share-btn">⁝</button>
+        <button class="follow-btn" id="follow-btn"><img src="includes/img/notifica.png" id="notifica-img"></button>
+        <button class="share-btn" id="share-btn">⋯</button>
     </nav>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <div class="news-modal" id="news-modal">
+        <span id="closeNewsBtn" class="close-btn">&times;</span>
+        <h1>News and announcement</h1>
+
+        <div class="articles">
+            <div class="art">
+                <h2>Sito Portfolio ~ 13/08/24</h2>
+                <p>First release of my Personal Website Portfolio is now availabe, be sure to check it.</p>
+            </div>
+            <div class="art">
+                <h2>Fiver Account ~ 13/08/24</h2>
+                <p>Now i'm on fiver. If you need static website like Portfolio Website, Linktree, Products Website and much more... you can contact me by social or directly by fiver.</p>
+            </div>
+            <div class="art">
+                <h2>LinkTree ~ 13/08/24</h2>
+                <p>The first release for link tree is now available (working on to improve it)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="share-modal" id="share-modal">
+        <span id="closeShareBtn" class="close-btn">&times;</span>
+        <h1>Share This linkTree</h1>
+
+        <div class="share-link">
+            <img src="https://cdn6.aptoide.com/imgs/3/c/0/3c0b5296e29c391d50a7580b3e949a34_icon.png" alt="">
+            <p class="description">Share with Instagram</p>
+            <p class="arrow"> ▷ </p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9" alt="">
+            <p class="description">Share with Facebook</p>
+            <p class="arrow"> ▷</p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="">
+            <p class="description">Share with linkedin</p>
+            <p class="arrow"> ▷</p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://avatars.githubusercontent.com/u/50278?s=280&v=4" alt="">
+            <p class="description">Share with x</p>
+            <p class="arrow"> ▷ </p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e" alt="">
+            <p class="description">Share with whatsapp</p>
+            <p class="arrow"> ▷ </p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://img.freepik.com/premium-vector/threads-logo-vector-eps-svg-ai-free-download-threads-app-logotype-logo-threads-instagram-meta_691560-10840.jpg?size=626&ext=jpg" alt="">
+            <p class="description">Share with threads</p>
+            <p class="arrow"> ▷ </p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://scx1.b-cdn.net/csz/news/800a/2017/1-snapchat.jpg" alt="">
+            <p class="description">Share with snapchat</p>
+            <p class="arrow"> ▷</p>
+        </div>
+
+        <div class="share-link">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XvFduY7sDBknSh_lJd80OzsdZ_LaHL2w-g&s" alt="">
+            <p class="description">Share with email</p>
+            <p class="arrow"> ▷ </p>
+        </div>
+
+    </div>
 
     <div class="Presentation">
         <div class="main-image">
@@ -30,7 +107,7 @@
         </div>
     </div>
 
-    
+
     <div class="button-link">
         <p class="subtitle">My Projects</p>
         <a href="https://vito290500.github.io/SitoPortfolio/" class="MyPortfolio">

@@ -13,12 +13,16 @@
 body{
     background-color: var(--bg-color);
 }
+
+
+/* NAV BAR */
 .nav-bar{
     width: 90%;
     height: 1.9rem;
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
+    max-width: 600px;
 }
 .follow-btn,
 .share-btn{
@@ -31,7 +35,145 @@ body{
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: var(--text-two-color);
+    transition: transform 0.3s ease-in-out;
 }
+#notifica-img{
+    width: 15px;
+    height: 15px;
+    margin: auto;
+}
+.nav-bar button:hover{
+    transform: scale(1.1);
+    background-color: rgb(75, 75, 75);
+}
+
+/* NEWS MODAL */
+.news-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 80%;
+    background-color: var(--second-level-color);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 500px;
+}
+.backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    margin: 8px;
+}
+.news-modal h1{
+    position: relative;
+    top: 30px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
+.articles{
+    width: 80%;
+    margin: 3rem auto;
+    
+}
+.art h2{
+    color: var(--main-color);
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+   
+}
+.art p{
+    font-size: 10px;
+    color: var(--text-two-color);
+    margin-bottom: 1rem;
+}
+
+
+/* SHARE MODAL */
+.share-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 80%;
+    background-color: var(--bg-color);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 500px;
+}
+.share-modal h1{
+    position: relative;
+    top: 30px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.share-link:first-of-type{
+    margin-top: 3rem;
+}
+.share-link:last-of-type{
+    margin-bottom: 2rem;
+}
+.share-link{
+    display: flex;
+    height: 1.5rem;
+    width: 80%;
+    margin: 8px auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+.share-link:hover{
+    transform: scale(1.1);
+}
+.share-link img{
+    width: 20px;
+    height: 20px;
+    margin: 2px 8px;
+    border-radius: 4px;
+}
+.share-link .description{
+    color: var(--text-two-color);
+    font-size: 10px;
+    text-align: center;
+    padding: 4px;
+}
+.share-link:hover{
+    background-color: grey;
+}
+.share-link .arrow{
+    font-size: 10px;
+    color: var(--text-two-color);
+    margin: 6px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 button img{
     width: 20px;
     height: 20px;
