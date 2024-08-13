@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root{
+    --bg-color: #121416;
+    --main-color: #FD7014;
+    --second-level-color: #1b1b1d;
+    --text-color: #EEEEEE;
+    --text-two-color: rgb(163, 163, 163);
+}
+body{
+    background-color: var(--bg-color);
+}
+.nav-bar{
+    width: 90%;
+    height: 1.9rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.follow-btn,
+.share-btn{
+    width: 1.9rem;
+    height: 90%;
+    margin: 1px;
+    background-color: var(--second-level-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: var(--text-two-color);
+}
+button img{
+    width: 20px;
+    height: 20px;
+    margin: 3px auto;
+}
+.Presentation{
+    width: 60%;
+    margin: auto;
+}
+.main-image{
+    width: 50%;
+    margin: auto;
+}
+.main-image img{
+    margin: 0px 8px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.description{
+    width: 100%;
+    margin: auto;
+}
+.description h1{
+    margin-top: 1rem;
+    font-size: 15px;
+    color: var(--main-color);
+    text-align: center;
+}
+.description p{
+    font-size: 13px;
+    color: var(--text-two-color);
+    text-align: center;
+}
+.description p:first-of-type{
+    margin-top: 4px;
+}
+.social{
+    margin: auto;
+    width: 80%;
+    margin-top: 0.5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.social img{
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+.social img:hover{
+    transform: scale(1.1);
+}
+.button-link{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.button-link a{
+    background-color: var(--second-level-color);
+    border: none;
+    margin: 4px 0px;
+    height: 2.5rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: var(--text-two-color);
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+.button-link a:hover{
+    transform: scale(1.1);
+    
+}
+.button-link a button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--second-level-color);
+    color: var(--text-two-color);
+    margin: 5px 2px;
+}
+.button-link a img{
+    width: 40px;
+    height: 30px;
+    margin: 5px 4px;
+}
+.button-link a p{
+    font-size: 12px;
+    text-align: left;
+    margin: auto;
+}
+#MySetup{
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+}
+#MySetup img{
+    width: 95%;
+    height: 100px;
+    margin: 6px auto;
+    border-radius: 4px;
+}
+#MySetup div{
+    display: flex;
+}
+#MySetup p{
+    width: 45%;
+    text-align: center;
+    margin-left: 30%;
+}
+#MySetup button{
+    margin-top: -3px;
+}
+.subtitle{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem
+}
