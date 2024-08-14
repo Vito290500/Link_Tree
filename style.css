@@ -236,7 +236,7 @@ button img{
     background-color: var(--second-level-color);
     border: none;
     margin: 4px 0px;
-    height: 3rem;
+    height: 3.5rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: var(--text-two-color);
     cursor: pointer;
@@ -262,14 +262,14 @@ button img{
     margin: auto 6px;
 }
 .button-link a p{
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
     margin: auto;
 }
 #MySetup{
     display: flex;
     flex-direction: column;
-    height: 9rem;
+    height: 10rem;
 }
 #MySetup img{
     width: 95%;
@@ -292,7 +292,7 @@ button img{
     text-align: center;
     color: var(--text-color);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 1rem;
     margin-bottom: 0.5rem
 }
