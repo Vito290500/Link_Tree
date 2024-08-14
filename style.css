@@ -44,22 +44,14 @@ body{
 }
 .nav-bar button:hover{
     transform: scale(1.1);
-    background-color: rgb(75, 75, 75);
+    background-color: var(--text-two-color);
+}
+.follow-btn:hover,
+.share-btn:hover{
+    color: var(--bg-color);
 }
 
-/* NEWS MODAL */
-.news-modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    width: 80%;
-    background-color: var(--second-level-color);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    max-width: 500px;
-}
+/* Backdrop */
 .backdrop{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -70,35 +62,54 @@ body{
     height: 100vh;
     display: none;
 }
+
+/* NEWS MODAL */
+.news-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 90%;
+    background-color: var(--second-level-color);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    max-width: 500px;
+}
 .close-btn{
     position: absolute;
     right: 0;
     margin: 8px;
+    color: var(--text-color);
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.close-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .news-modal h1{
     position: relative;
     top: 30px;
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     width: 80%;
     margin: auto;
 }
 .articles{
     width: 80%;
-    margin: 3rem auto;
-    
+    margin: 4rem auto;
 }
 .art h2{
     color: var(--main-color);
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 0.2rem;
-   
 }
 .art p{
-    font-size: 10px;
+    font-size: 15px;
     color: var(--text-two-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -174,11 +185,7 @@ body{
 
 
 
-button img{
-    width: 20px;
-    height: 20px;
-    margin: 3px auto;
-}
+/* Main Content */
 .Presentation{
     width: 90%;
     margin: auto;
@@ -218,8 +225,10 @@ button img{
     display: flex;
     align-items: center;
 }
-.social img{
+.social a{
     margin: auto;
+}
+.social img{
     width: 28px;
     height: 28px;
 }
@@ -249,12 +258,12 @@ button img{
     
 }
 .button-link a button{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: var(--second-level-color);
     color: var(--text-two-color);
-    margin: 5px 2px;
+    margin: auto 2px;
 }
 .button-link a img{
     width: 40px;
@@ -273,7 +282,7 @@ button img{
 }
 #MySetup img{
     width: 95%;
-    height: 100px;
+    height: 110px;
     margin: 6px auto;
     border-radius: 4px;
 }
@@ -286,13 +295,13 @@ button img{
     margin-left: 30%;
 }
 #MySetup button{
-    margin-top: -3px;
+    margin-top: -7px;
 }
 .subtitle{
     text-align: center;
     color: var(--text-color);
     font-weight: bold;
     font-size: 15px;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     margin-bottom: 0.5rem
 }
