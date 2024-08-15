@@ -13,6 +13,7 @@ function openNewsModal() {
     backdrop.style.display = 'block';
     setTimeout(() => {
         newsModal.style.opacity = '1';
+        newsModal.style.display = "block";
     }, 10);
 }
 
@@ -21,11 +22,13 @@ function openShareModal() {
     backdrop.style.display = 'block';
     setTimeout(() => {
         shareModal.style.opacity = '1';
+        shareModal.style.display = "block";
     }, 10);
 }
 
 function closeNewsModal() {
     newsModal.style.opacity = '0';
+    newsModal.style.display = "none";
     backdrop.style.display = 'none';
     setTimeout(() => {
         newsModal.classList.remove('show');
@@ -34,6 +37,7 @@ function closeNewsModal() {
 
 function closeShareModal() {
     shareModal.style.opacity = '0';
+    shareModal.style.display = "none";
     backdrop.style.display = 'none';
     setTimeout(() => {
        shareModal.classList.remove('show');

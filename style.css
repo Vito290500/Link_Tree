@@ -75,6 +75,7 @@ body{
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     max-width: 500px;
+    display: none;
 }
 .close-btn{
     position: absolute;
@@ -120,17 +121,18 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    width: 80%;
+    width: 90%;
     background-color: var(--bg-color);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     max-width: 500px;
+    display: none;
 }
 .share-modal h1{
     position: relative;
     top: 30px;
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     text-align: center;
 }
@@ -141,25 +143,28 @@ body{
     margin-bottom: 2rem;
 }
 .share-link{
+    background-color: var(--second-level-color);
     display: flex;
     height: 1.5rem;
-    width: 80%;
+    width: 90%;
+    height: 3rem;
     margin: 8px auto;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
+    text-decoration: none;
 }
 .share-link:hover{
     transform: scale(1.1);
 }
 .share-link img{
-    width: 20px;
-    height: 20px;
-    margin: 2px 8px;
+    width: 25px;
+    height: 25px;
+    margin: auto 8px;
     border-radius: 4px;
 }
 .share-link .description{
     color: var(--text-two-color);
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     padding: 4px;
 }
@@ -169,7 +174,7 @@ body{
 .share-link .arrow{
     font-size: 10px;
     color: var(--text-two-color);
-    margin: 6px 8px;
+    margin: auto 1.5rem;
 }
 
 
