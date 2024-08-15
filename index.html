@@ -49,10 +49,10 @@
             document.getElementById('shareInstagram').addEventListener('click', async () => {
                 const url = 'https://vito290500.github.io/Link_Tree/';
     
-
                 try {
+                    alert("link copied to clipboard!!")
                     await navigator.clipboard.writeText(url);
-                    console.log('Link copiato negli appunti');
+                      
                 } catch (err) {
                     console.error('Errore nella copia del link:', err);
                 }

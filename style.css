@@ -4,9 +4,9 @@
     font-family: sans-serif;
 }
 :root{
-    --bg-color: #121416;
+    --bg-color: #111417;
     --main-color: #FD7014;
-    --second-level-color: #1b1b1d;
+    --second-level-color: #171b1f;
     --text-color: #EEEEEE;
     --text-two-color: rgb(163, 163, 163);
 }
@@ -257,6 +257,7 @@ body{
     display: flex;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
+
 }
 .button-link a:hover{
     transform: scale(1.1);
