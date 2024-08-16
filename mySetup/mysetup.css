@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root{
+    --bg-color: #111417;
+    --main-color: #FD7014;
+    --second-level-color: #171b1f;
+    --text-color: #EEEEEE;
+    --text-two-color: rgb(163, 163, 163);
+}
+body {
+    background-color: var(--bg-color);
+}
+
+/* Nav Bar Style */
+.nav-bar-setup{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+    color: white;
+}
+.hover:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+.All_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.monitor,
+.mouse,
+.cuffie,
+.other1,
+.rogstrix,
+.other2,
+.other3,
+.pc{
+    display: flex;
+    justify-content: center;
+    margin: 0rem 0;
+}
+.monitor img,
+.mouse img,
+.cuffie img,
+.rogstrix img,
+.other1 img,
+.other2 img,
+.other3 img{
+    max-width: 100%;
+}
+
+.pc{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.pc-img{
+    margin-top: 4rem;
+    margin-right: 8rem;
+}
+.component h1{
+    margin-top: 2rem;
+}
+.component div{
+    display: flex;
+    height: 40px;
+}
+.component div p{
+    font-size: 20px;
+}
+.component div a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+.component div a:hover{
+    color: orange;
+}
+.first{
+    margin-top: -1rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+    .img1{
+        width: 340px;
+        height: 250px;
+    }
+    .img2{
+        width: 340px;
+        height: 200px;
+    }
+    .hover a img{
+        height: 120px;
+    }
+    .pc{
+        flex-direction: column;
+        width: 95%;
+    }
+    .pc-img img{
+        width: 250px;
+        height: 300px;
+        margin-left: 15%;
+    }
+    .component{
+        margin-left: 10%;
+    }
+    .component div p,
+    .component div a{
+       font-size: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

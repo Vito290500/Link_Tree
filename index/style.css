@@ -219,16 +219,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Main Content */
 .Presentation{
     max-width: 600px;
@@ -281,6 +271,9 @@ body{
 .social img:hover{
     transform: scale(1.1);
 }
+
+
+/*Button link style */
 .button-link{
     max-width: 500px;
     width: 90%;
@@ -288,7 +281,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.button-link a{
+.link-btn{
     background-color: var(--second-level-color);
     border: none;
     margin: 4px 0px;
@@ -297,53 +290,26 @@ body{
     color: var(--text-two-color);
     cursor: pointer;
     display: flex;
-    text-decoration: none;
     transition: transform 0.3s ease-in-out;
-
 }
-.button-link a:hover{
-    transform: scale(1.1);
-    
+.link-btn:hover{
+    transform: scale(1.1);  
 }
-.button-link a button{
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: var(--second-level-color);
-    color: var(--text-two-color);
-    margin: auto 2px;
-}
-.button-link a img{
+.link-btn img{
     width: 40px;
     height: 30px;
     margin: auto 6px;
 }
-.button-link a p{
+.link-btn a{
+    display: flex;
+    width: 90%;
+    text-decoration: none;
+    color: var(--text-two-color);
+}
+.link-btn p{
     font-size: 15px;
     text-align: left;
     margin: auto;
-}
-#MySetup{
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-}
-#MySetup img{
-    width: 95%;
-    height: 110px;
-    margin: 6px auto;
-    border-radius: 4px;
-}
-#MySetup div{
-    display: flex;
-}
-#MySetup p{
-    width: 45%;
-    text-align: center;
-    margin-left: 30%;
-}
-#MySetup button{
-    margin-top: -7px;
 }
 .subtitle{
     text-align: center;
@@ -353,3 +319,44 @@ body{
     margin-top: 1.2rem;
     margin-bottom: 0.5rem
 }
+.share-button{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--second-level-color);
+    color: var(--text-two-color);
+    margin: auto 2px;
+    z-index: 1;
+}
+.share-button:hover{
+    font-size: 20px;
+}
+#MySetup{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+#MySetup a{
+    width: 100%;
+}
+#MySetup a img{
+    width: 95%;
+    height: 110px;
+    margin: 6px auto;
+    border-radius: 4px;
+}
+#MySetup .description{
+    display: flex;
+    width: 100%;
+}
+#MySetup .description p{
+    width: 40%;
+    margin-left: 32%;
+    text-align: center;
+}
+#MySetup .share-button{
+    margin-top: -7px;
+    margin-right: 0rem;
+}
+
